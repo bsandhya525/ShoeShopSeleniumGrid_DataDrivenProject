@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="6" guice-stage="DEVELOPMENT" name="Failed suite [ShoeShop Suite]" parallel="tests">
+  <parameter name="browser" value="IE"/>
+  <parameter name="version" value="11"/>
+  <parameter name="platform" value="Windows"/>
+  <test name="MonthlyShoeDisplaysTest_Chrome(failed)" parallel="tests">
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="version" value="50.0.2661.94"/>
+    <parameter name="platform" value="Windows"/>
+    <classes>
+      <class name="com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest1">
+        <methods>
+          <include name="testMontlyShoeDisplays" invocation-numbers="10 12"/>
+          <include name="updateDataSetStatus"/>
+          <include name="updateDataSetStatus"/>
+          <include name="updateDataSetStatus"/>
+          <include name="verifyTestSuiteRunmode"/>
+          <include name="updateTestStatus"/>
+          <include name="updateTestStatus"/>
+          <include name="updateTestStatus"/>
+          <include name="verifyTestCaseRunmode"/>
+          <include name="verifyTestCaseRunmode"/>
+          <include name="verifyTestCaseRunmode"/>
+        </methods>
+      </class> <!-- com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest1 -->
+      <class name="com.selenium.suite.shoeshop.EmailSubscriptionTest1">
+        <methods>
+          <include name="verifyTestCaseRunmode"/>
+          <include name="verifyTestCaseRunmode"/>
+          <include name="verifyTestCaseRunmode"/>
+          <include name="updateTestStatus"/>
+          <include name="updateTestStatus"/>
+          <include name="updateTestStatus"/>
+          <include name="updateDataSetStatus"/>
+          <include name="updateDataSetStatus"/>
+          <include name="updateDataSetStatus"/>
+        </methods>
+      </class> <!-- com.selenium.suite.shoeshop.EmailSubscriptionTest1 -->
+    </classes>
+  </test> <!-- MonthlyShoeDisplaysTest_Chrome(failed) -->
+  <test name="MonthlyShoeDisplaysTest_Mozilla(failed)" parallel="tests">
+    <parameter name="browser" value="Mozilla"/>
+    <parameter name="version" value="9.0.1"/>
+    <parameter name="platform" value="Windows"/>
+    <classes>
+      <class name="com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest1">
+        <methods>
+          <include name="testMontlyShoeDisplays" invocation-numbers="10 12"/>
+          <include name="updateDataSetStatus"/>
+          <include name="updateDataSetStatus"/>
+          <include name="updateDataSetStatus"/>
+          <include name="verifyTestSuiteRunmode"/>
+          <include name="updateTestStatus"/>
+          <include name="updateTestStatus"/>
+          <include name="updateTestStatus"/>
+          <include name="verifyTestCaseRunmode"/>
+          <include name="verifyTestCaseRunmode"/>
+          <include name="verifyTestCaseRunmode"/>
+        </methods>
+      </class> <!-- com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest1 -->
+      <class name="com.selenium.suite.shoeshop.EmailSubscriptionTest1">
+        <methods>
+          <include name="verifyTestCaseRunmode"/>
+          <include name="verifyTestCaseRunmode"/>
+          <include name="verifyTestCaseRunmode"/>
+          <include name="updateTestStatus"/>
+          <include name="updateTestStatus"/>
+          <include name="updateTestStatus"/>
+          <include name="updateDataSetStatus"/>
+          <include name="updateDataSetStatus"/>
+          <include name="updateDataSetStatus"/>
+        </methods>
+      </class> <!-- com.selenium.suite.shoeshop.EmailSubscriptionTest1 -->
+    </classes>
+  </test> <!-- MonthlyShoeDisplaysTest_Mozilla(failed) -->
+  <test name="MonthlyShoeDisplaysTest_IE(failed)" parallel="tests">
+    <parameter name="browser" value="IE"/>
+    <parameter name="version" value="11"/>
+    <parameter name="platform" value="Windows"/>
+    <classes>
+      <class name="com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest1">
+        <methods>
+          <include name="testMontlyShoeDisplays" invocation-numbers="10 12"/>
+          <include name="updateDataSetStatus"/>
+          <include name="updateDataSetStatus"/>
+          <include name="updateDataSetStatus"/>
+          <include name="verifyTestSuiteRunmode"/>
+          <include name="updateTestStatus"/>
+          <include name="updateTestStatus"/>
+          <include name="updateTestStatus"/>
+          <include name="verifyTestCaseRunmode"/>
+          <include name="verifyTestCaseRunmode"/>
+          <include name="verifyTestCaseRunmode"/>
+        </methods>
+      </class> <!-- com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest1 -->
+      <class name="com.selenium.suite.shoeshop.EmailSubscriptionTest1">
+        <methods>
+          <include name="verifyTestCaseRunmode"/>
+          <include name="verifyTestCaseRunmode"/>
+          <include name="verifyTestCaseRunmode"/>
+          <include name="updateTestStatus"/>
+          <include name="updateTestStatus"/>
+          <include name="updateTestStatus"/>
+          <include name="updateDataSetStatus"/>
+          <include name="updateDataSetStatus"/>
+          <include name="updateDataSetStatus"/>
+        </methods>
+      </class> <!-- com.selenium.suite.shoeshop.EmailSubscriptionTest1 -->
+    </classes>
+  </test> <!-- MonthlyShoeDisplaysTest_IE(failed) -->
+</suite> <!-- Failed suite [ShoeShop Suite] -->

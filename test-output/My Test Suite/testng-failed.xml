@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [My Test Suite]">
+  <test name="RegressionTest(failed)">
+    <classes>
+      <class name="com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest">
+        <methods>
+          <include name="verifyTestCaseRunmode"/>
+          <include name="testMontlyShoeDisplays"/>
+        </methods>
+      </class> <!-- com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest -->
+      <class name="com.selenium.suite.shoeshop.EmailSubscriptionTest">
+        <methods>
+          <include name="testEmailSubscription"/>
+          <include name="verifyTestSuiteRunmode"/>
+          <include name="verifyTestCaseRunmode"/>
+        </methods>
+      </class> <!-- com.selenium.suite.shoeshop.EmailSubscriptionTest -->
+    </classes>
+  </test> <!-- RegressionTest(failed) -->
+</suite> <!-- Failed suite [My Test Suite] -->

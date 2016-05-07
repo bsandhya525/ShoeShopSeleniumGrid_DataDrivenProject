@@ -1,0 +1,364 @@
+<html>
+<head>
+<title>TestNG:  MonthlyShoeDisplaysTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>MonthlyShoeDisplaysTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>10/2/1</td>
+</tr><tr>
+<td>Started on:</td><td>Thu May 05 06:46:44 EDT 2016</td>
+</tr>
+<tr><td>Total time:</td><td>603 seconds (603809 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest.updateDataSetStatus()'><b>updateDataSetStatus</b><br>Test class: com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest</td>
+<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;CORP-PF00HQD9&apos;, ip: &apos;192.168.2.4&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=e14bd830-204a-4706-adec-8bd49e4f8ac4, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: e14bd830-204a-4706-adec-8bd49e4f8ac4
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:521)
+	at com.selenium.base.TestBase.closeBrowser(TestBase.java:149)
+	at com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest.updateDataSetStatus(MonthlyShoeDisplaysTest.java:182)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:4444 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 26 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 39 more
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace494073738", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace494073738'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;CORP-PF00HQD9&apos;, ip: &apos;192.168.2.4&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=e14bd830-204a-4706-adec-8bd49e4f8ac4, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: e14bd830-204a-4706-adec-8bd49e4f8ac4
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:521)
+	at com.selenium.base.TestBase.closeBrowser(TestBase.java:149)
+	at com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest.updateDataSetStatus(MonthlyShoeDisplaysTest.java:182)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:703)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:393)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:4444 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 26 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 39 more
+</pre></div></td>
+<td>0</td>
+<td>com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest@59f99ea</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest.updateDataSetStatus()'><b>updateDataSetStatus</b><br>Test class: com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest</td>
+<td></td>
+<td>0</td>
+<td>com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest@59f99ea</td></tr>
+<tr>
+<td title='com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest.updateTestStatus()'><b>updateTestStatus</b><br>Test class: com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest.testMontlyShoeDisplays()'><b>testMontlyShoeDisplays</b><br>Test class: com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest<br>Parameters: November, Mozilla, 9.0.1, Windows</td>
+<td><div><pre>java.lang.AssertionError: Image src is null.No Image to display. expected [true] but found [false]
+	at com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest.testMontlyShoeDisplays(MonthlyShoeDisplaysTest.java:146)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace208663334", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace208663334'><pre>java.lang.AssertionError: Image src is null.No Image to display. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest.testMontlyShoeDisplays(MonthlyShoeDisplaysTest.java:146)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:393)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>22</td>
+<td>com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest@59f99ea</td></tr>
+<tr>
+<td title='com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest.testMontlyShoeDisplays()'><b>testMontlyShoeDisplays</b><br>Test class: com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest<br>Parameters: December, Mozilla, 9.0.1, Windows</td>
+<td><div><pre>java.lang.AssertionError: Shoes are not displayed properly for the test month-December-&gt;Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;CORP-PF00HQD9&apos;, ip: &apos;192.168.2.4&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: driver.version: RemoteWebDriver
+	at com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest.testMontlyShoeDisplays(MonthlyShoeDisplaysTest.java:161)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace754298485", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace754298485'><pre>java.lang.AssertionError: Shoes are not displayed properly for the test month-December-&gt;Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;CORP-PF00HQD9&apos;, ip: &apos;192.168.2.4&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest.testMontlyShoeDisplays(MonthlyShoeDisplaysTest.java:161)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:393)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>127</td>
+<td>com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest@59f99ea</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest.testMontlyShoeDisplays()'><b>testMontlyShoeDisplays</b><br>Test class: com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest<br>Parameters: January, Mozilla, 9.0.1, Windows</td>
+<td></td>
+<td>25</td>
+<td>com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest@59f99ea</td></tr>
+<tr>
+<td title='com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest.testMontlyShoeDisplays()'><b>testMontlyShoeDisplays</b><br>Test class: com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest<br>Parameters: February, Chrome, 50.0.2661.94, Windows</td>
+<td></td>
+<td>24</td>
+<td>com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest@59f99ea</td></tr>
+<tr>
+<td title='com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest.testMontlyShoeDisplays()'><b>testMontlyShoeDisplays</b><br>Test class: com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest<br>Parameters: March, Mozilla, 9.0.1, Windows</td>
+<td></td>
+<td>23</td>
+<td>com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest@59f99ea</td></tr>
+<tr>
+<td title='com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest.testMontlyShoeDisplays()'><b>testMontlyShoeDisplays</b><br>Test class: com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest<br>Parameters: April, Mozilla, 9.0.1, Windows</td>
+<td></td>
+<td>24</td>
+<td>com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest@59f99ea</td></tr>
+<tr>
+<td title='com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest.testMontlyShoeDisplays()'><b>testMontlyShoeDisplays</b><br>Test class: com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest<br>Parameters: May, Mozilla, 9.0.1, Windows</td>
+<td></td>
+<td>22</td>
+<td>com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest@59f99ea</td></tr>
+<tr>
+<td title='com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest.testMontlyShoeDisplays()'><b>testMontlyShoeDisplays</b><br>Test class: com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest<br>Parameters: June, Mozilla, 9.0.1, Windows</td>
+<td></td>
+<td>232</td>
+<td>com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest@59f99ea</td></tr>
+<tr>
+<td title='com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest.testMontlyShoeDisplays()'><b>testMontlyShoeDisplays</b><br>Test class: com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest<br>Parameters: July, Mozilla, 9.0.1, Windows</td>
+<td></td>
+<td>22</td>
+<td>com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest@59f99ea</td></tr>
+<tr>
+<td title='com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest.testMontlyShoeDisplays()'><b>testMontlyShoeDisplays</b><br>Test class: com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest<br>Parameters: August, Mozilla, 9.0.1, Windows</td>
+<td></td>
+<td>21</td>
+<td>com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest@59f99ea</td></tr>
+<tr>
+<td title='com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest.testMontlyShoeDisplays()'><b>testMontlyShoeDisplays</b><br>Test class: com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest<br>Parameters: September, Mozilla, 9.0.1, Windows</td>
+<td></td>
+<td>28</td>
+<td>com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest@59f99ea</td></tr>
+<tr>
+<td title='com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest.testMontlyShoeDisplays()'><b>testMontlyShoeDisplays</b><br>Test class: com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest<br>Parameters: October, Chrome, 50.0.2661.94, Windows</td>
+<td></td>
+<td>20</td>
+<td>com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest@59f99ea</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest.testMontlyShoeDisplays()'><b>testMontlyShoeDisplays</b><br>Test class: com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest<br>Parameters: All Shoes, Mozilla, 9.0.1, Windows</td>
+<td></td>
+<td>0</td>
+<td>com.selenium.suite.shoeshop.MonthlyShoeDisplaysTest@59f99ea</td></tr>
+</table><p>
+</body>
+</html>
